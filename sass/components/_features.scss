@@ -1,0 +1,40 @@
+.features {
+  display: flex;
+
+  &__item {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $secondaryBgColor;
+  border-radius: 4px;
+}
+
+.features__box--title {
+  text-align: start;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.features__box--description {
+  text-align: start;
+  margin-bottom: 0;
+
+  line-height: 1.71;
+  color: $secondaryTextColor;
+}

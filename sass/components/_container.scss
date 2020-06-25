@@ -1,0 +1,23 @@
+.container {
+  @extend %container;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__title {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.page-nav {
+  @extend %container;
+  display: flex;
+}
+
+.container-footer {
+  @extend %container;
+  display: flex;
+  align-items: baseline;
+  padding: 48px 15px 28px 15px;
+}
